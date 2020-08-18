@@ -19,9 +19,12 @@ package org.jboss.set.aphrodite.domain.spi;
 import org.jboss.set.aphrodite.domain.Compare;
 
 import java.net.URL;
+import java.util.List;
 
 public interface CompareHome {
 
     Compare getCompare(URL url, String tag1, String tag2);
+
+    List<String> getTagsAndBranches(URL url);
 
 }
